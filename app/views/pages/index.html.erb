@@ -1,0 +1,10 @@
+
+<% @pages.each do |ch|%>
+<%=link_to page_path(ch.id) do %>
+        <h2><%=ch.name%></h2>
+        <h3><%=ch.location%></h3>
+        <h4><%=ch.house%></h4>
+    <%end%>
+<%end%>
+
+<%= link_to 'crear nuevo mago', new_page_path %>
